@@ -1,0 +1,39 @@
+POST http://localhost:8080/api/cards
+Content-Type: application/json
+
+{
+  "card_name": "XP",
+  "card_status": true,
+  "card_due_day": 27
+}
+###
+
+PATCH http://localhost:8080/api/cards/88673a2f-62fd-4e54-bf8d-d59b959e0548
+Content-Type: application/json
+
+{
+  "card_status": false
+}
+
+###
+
+PUT http://localhost:8080/api/cards/88673a2f-62fd-4e54-bf8d-d59b959e0548
+Content-Type: application/json
+
+{
+  "card_status": true,
+  "card_name": "XP",
+  "card_due_day": 27
+}
+
+###
+
+GET http://localhost:8080/api/cards
+Accept: application/json
+
+###
+
+GET http://localhost:8080/api/cards/88673a2f-62fd-4e54-bf8d-d59b959e0548
+Accept: application/json
+
+###
