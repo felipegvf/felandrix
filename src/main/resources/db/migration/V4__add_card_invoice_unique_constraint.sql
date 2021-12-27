@@ -1,0 +1,1 @@
+alter table card_invoice add constraint only_one_due_date_for_card_invoice unique (card_invoice_due_date);
