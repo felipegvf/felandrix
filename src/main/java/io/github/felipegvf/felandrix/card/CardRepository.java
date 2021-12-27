@@ -5,6 +5,6 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 import java.util.UUID;
 
-@RepositoryRestResource(path = "/cards")
+@RepositoryRestResource(path = "cards")
 public interface CardRepository extends CrudRepository<Card, UUID> {
 }
