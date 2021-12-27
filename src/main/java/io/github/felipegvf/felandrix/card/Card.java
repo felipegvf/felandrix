@@ -1,6 +1,7 @@
 package io.github.felipegvf.felandrix.card;
 
 import javax.persistence.*;
+import java.io.Serial;
 import java.io.Serializable;
 import java.util.Objects;
 import java.util.UUID;
@@ -8,6 +9,9 @@ import java.util.UUID;
 @Entity
 @Table(name = "card")
 public class Card implements Serializable {
+
+    @Serial
+    private static final long serialVersionUID = 3485468811786404342L;
 
     @Id
     @GeneratedValue
