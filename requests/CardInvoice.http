@@ -1,0 +1,15 @@
+GET {{base_path}}/card_invoices
+Accept: application/json
+
+###
+
+POST {{base_path}}/card_invoices
+Content-Type: application/json
+
+{
+  "card_id": "a8066aa7-65fe-42dc-9d65-6ead29e00701",
+  "card_invoice_due_date": "2022-01-27"
+}
+
+###
+
