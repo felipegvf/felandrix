@@ -1,4 +1,14 @@
-POST http://localhost:8080/api/cards
+GET {{base_path}}/cards
+Accept: application/json
+
+###
+
+GET {{base_path}}/cards/a8066aa7-65fe-42dc-9d65-6ead29e00701
+Accept: application/json
+
+###
+
+POST {{base_path}}/cards
 Content-Type: application/json
 
 {
@@ -8,7 +18,7 @@ Content-Type: application/json
 }
 ###
 
-PATCH http://localhost:8080/api/cards/88673a2f-62fd-4e54-bf8d-d59b959e0548
+PATCH {{base_path}}/cards/88673a2f-62fd-4e54-bf8d-d59b959e0548
 Content-Type: application/json
 
 {
@@ -17,7 +27,7 @@ Content-Type: application/json
 
 ###
 
-PUT http://localhost:8080/api/cards/88673a2f-62fd-4e54-bf8d-d59b959e0548
+PUT {{base_path}}/cards/88673a2f-62fd-4e54-bf8d-d59b959e0548
 Content-Type: application/json
 
 {
@@ -28,12 +38,5 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:8080/api/cards
-Accept: application/json
 
-###
 
-GET http://localhost:8080/api/cards/88673a2f-62fd-4e54-bf8d-d59b959e0548
-Accept: application/json
-
-###
